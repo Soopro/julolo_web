@@ -1,0 +1,35 @@
+{
+  "name": "julolo-web",
+  "version": "0.0.0-pre",
+  "description": "julolo-web",
+  "main": "app.coffee",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:Supmice/julolo_web.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Supmice/julolo_web/issues"
+  },
+  "homepage": "https://github.com/Supmice/julolo_web",
+  "dependencies": {
+    "grunt": "^0.4.5",
+    "lodash": "^2.4.1",
+    "grunt-contrib-clean": "^0.6.0"
+  },
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-browser-sync": "^1.5.3",
+    "grunt-contrib-coffee": "^0.12.0",
+    "grunt-contrib-copy": "^0.7.0",
+    "grunt-contrib-jade": "^0.13.0",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-prettify": "^0.4.0",
+    "jsonfile": "^2.0.0",
+    "supertest": "^0.14.0"
+  }
+}

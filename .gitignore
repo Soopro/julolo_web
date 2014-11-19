@@ -1,0 +1,17 @@
+.DS_Store
+.idea
+npm-debug.log
+*_book
+
+.tmp
+trash
+
+/node_modules
+/bower_components
+
+/dist
+/build
+/libs
+
+/db/mongo_data
+/db/dump.rdb
