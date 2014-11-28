@@ -1,0 +1,135 @@
+extends ../../base
+
+block content
+
+  include ../../common/navbar/navbar_content
+
+  include ../../common/banner/banner_content
+
+  // job_positions
+  .container
+    .row
+      .job_positions
+        h2 Supmice Tech co.,Ltd.
+        // nav
+        include ../../common/nav-tabs/nav-tabs
+
+        // status
+        .status
+          .col-md-2.col-sm-4.col-xs-6.statu
+            h2
+              | 212
+              small Talents
+          .col-md-2.col-sm-4.col-xs-6.statu
+            h2
+              | 61
+              small Matched
+          .col-md-2.col-sm-4.col-xs-6.statu
+            h2
+              | 120
+              small Commented
+          .col-md-2.col-sm-4.col-xs-6.statu
+            h2
+              | 212
+              small Talents
+          .col-md-2.col-sm-4.col-xs-6.statu
+            h2
+              | 212
+              small Talents
+          .col-md-2.col-sm-4.col-xs-6
+            a.btn.addnew.pull-right(href="../../pages/job_position_add/index.html") Add New
+        // #status
+        // filter
+        .filter
+          .col-md-2.col-sm-4.col-xs-6
+            .btn-group
+              button.btn.btn-default.dropdown-toggle(type="button", data-toggle="dropdown")
+                | Job class
+                span.caret
+              ul.dropdown-menu(role="menu")
+                li
+                  a(href="#") Action
+                li
+                  a(href="#") Another action
+                li
+                  a(href="#") Something else here
+                li.divider
+                li
+                  a(href="#") Separated link
+          .col-md-2.col-sm-4.col-xs-6
+            .btn-group
+              button.btn.btn-default.dropdown-toggle(type="button", data-toggle="dropdown")
+                | Job class
+                span.caret
+              ul.dropdown-menu(role="menu")
+                li
+                  a(href="#") Action
+                li
+                  a(href="#") Another action
+                li
+                  a(href="#") Something else here
+                li.divider
+                li
+                  a(href="#") Separated link
+          .col-md-2.col-sm-4.col-xs-6
+            .btn-group
+              button.btn.btn-default.dropdown-toggle(type="button", data-toggle="dropdown")
+                | Job class
+                span.caret
+              ul.dropdown-menu(role="menu")
+                li
+                  a(href="#") Action
+                li
+                  a(href="#") Another action
+                li
+                  a(href="#") Something else here
+                li.divider
+                li
+                  a(href="#") Separated link
+          .col-md-2.col-sm-4.col-xs-6
+            .btn-group
+              button.btn.btn-default.dropdown-toggle(type="button", data-toggle="dropdown")
+                | Job class
+                span.caret
+              ul.dropdown-menu(role="menu")
+                li
+                  a(href="#") Action
+                li
+                  a(href="#") Another action
+                li
+                  a(href="#") Something else here
+                li.divider
+                li
+                  a(href="#") Separated link
+          .col-md-4.col-sm-8.col-xs-12
+            .input-group.pull-right.search
+              input.form-control(type="text")
+              span.input-group-addon
+                i.fa.fa-search
+        // #filter
+        // table
+        table.table
+          thead
+            tr
+              th #
+              th Class
+              th Job title
+              th Date
+          tbody
+            tr
+              td 1
+              td Front-end
+              td Angular JS developer
+              td 2014.10.03
+            tr
+              td 2
+              td Programmer
+              td Python Seniar developer
+              td 2014.10.02
+            tr
+              td 3
+              td Unknew
+              td Cleaner
+              td 2014.10.01
+        // #table
+  // #job_positions

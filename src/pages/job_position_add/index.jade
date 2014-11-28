@@ -1,0 +1,76 @@
+extends ../../base
+
+block content
+
+  include ../../common/navbar/navbar_content
+
+  include ../../common/banner/banner_content
+
+  // job_position_add
+  .container.job_position_add
+    .row
+      h2 Supmice Tech co.,Ltd.
+      // nav
+      include ../../common/nav-tabs/nav-tabs
+
+      // job_positions_add_form
+      h3 Add newjob positions
+      .col-md-6.col-sm-8.col-xs-12
+        .col-md-10
+          form(role="form")
+            .form-group
+              label(for="jobtitle") Job title
+              input#jobtitle.form-control(type="text")
+            .form-group
+              label Job class
+              select.form-control
+                option class
+                option 1
+                option 1
+                option 1
+                option 1
+            .form-group
+              label Educational experience
+              select.form-control
+                option none
+                option 1
+                option 1
+                option 1
+                option 1
+            .form-group
+              label Work experience
+              select.form-control
+                option none
+                option 1
+                option 1
+                option 1
+                option 1
+            .form-group.gender.pull-left
+              label Gender
+              select.form-control
+                option none
+                option 1
+                option 1
+                option 1
+                option 1
+            .form-group.native.pull-right
+              label(for="nativeplace") Native place
+              input#nativeplace.form-control(type="text")
+            .jobadd_btn
+              input.btn.btn-default(type="submit", value="save")
+              input.btn.btn-default(type="reset", value="cancel")
+      .col-md-6.col-sm-8.col-xs-12
+        .col-md-10
+          form(role="form")
+            .form-group
+              label(for="salary") Salary
+              input#salary.form-control(type="text")
+            .form-group
+              label(for="responsibility") Responsibility
+              textarea#responsibility.form-control(rows="5", placeholder="Job description here.")
+            .form-group
+              label(for="requirement") Requirement
+              textarea#requirement.form-control(rows="5", placeholder="Job requirement here.")
+            img.pull-right(src="img/dog.png")
+      // #job_positions_add_form
+  // #job_positions_add

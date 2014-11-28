@@ -18,6 +18,11 @@ module.exports = (grunt) ->
       cwd: './src'
       src: '**/*.js'
       dest: './build/'
+    img:
+      expand: true
+      cwd: './src'
+      src: '**/*.png'
+      dest: './build/'
 
 assetFilter = (dest, src) ->
   filename = basename src

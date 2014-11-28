@@ -1,0 +1,55 @@
+extends ../../base
+
+block content
+
+  include ../../common/navbar/navbar_content
+
+  include ../../common/banner/banner_content
+
+  // dashboard
+  .container.dashboad
+    .row
+      .panel.log.pull-left
+        .panel-body
+          h3 Supmice Tech co.,Ltd.
+          p
+            | Lorem ipsum dolor sit amet consectetur adipisicing elit,sed do elusmod
+            | tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam.
+          .col-md-6.col-sm-8.col-sm-offset-2.col-xs-12
+            h4
+              span.badge 6
+              | Design
+            h4
+              span.badge 3
+              | Progarmmer
+            h4
+              span.badge 1
+              | Support
+          .col-md-6.col-sm-8.col-sm-offset-2.col-xs-12
+            h4
+              span.badge 9
+              | Front-end
+            h4
+              span.badge 3
+              | Product
+            h4
+              span.badge 3
+              | Product
+          .col-md-12
+            .foot
+              a.btn(href="../../pages/talent_pool/index.html") Enter
+              .col-md-6.col-sm-6.col-xs-6.pull-right.statu
+                h2
+                  | 212
+                  small Talents
+                h2
+                  | 22
+                  small Match
+      a(href="#")
+        .panel.specialpanel.pull-right
+          .createnew
+            img(src="../../img/cross.png")
+            p.lead Create new organization
+  .dog
+    img(src="../../img/dog3.png")
+  // #dashboard
