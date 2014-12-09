@@ -5,12 +5,12 @@ angular.module 'juloloApp'
   '$location'
   'Auth'
   'g'
-  {
+  (
     $rootScope
     $location
     Auth
     g
-  } ->
+  ) ->
     $rootScope.$on '$locationChangeStart', ->
       pathList = [
         '/login'
