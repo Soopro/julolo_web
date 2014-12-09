@@ -1,0 +1,47 @@
+extends ../../base
+
+block content
+
+  include ../../common/navbar/navbar_index
+
+  include  ../../common/banner/banner_index
+
+  // activiate
+  .container.activiate
+    .row
+      h1.text-center Activiate your account
+    .row
+      .col-md-6.col-md-offset-3.col-sm-6.col-sm-offset-3.col-xs-6.col-xs-offset-3
+        form.form-horizontal(role="form")
+          .form-group
+            .col-md-2.col-sm-2.col-xs-2
+              i.fa.fa-envelope.fa-2x.pull-right
+            .col-md-9.col-sm-9.col-xs-9
+              input#disabledInput.form-control.input-lg(type="email", placeholder="redy@supmice.com")
+          .form-group
+            .col-md-2.col-sm-2.col-xs-2
+              i.fa.fa-user.fa-2x.pull-right
+            .col-md-9.col-sm-9.col-xs-9
+              input.form-control.input-lg(type="name", placeholder="your user name")
+              p.help-block
+                | User name is for your company website url.Accept Latin, number, dash, Underscore.
+          .form-group
+            .col-md-2.col-sm-2.col-xs-2
+              i.fa.fa-unlock-alt.fa-2x.pull-right
+            .col-md-9.col-sm-9.col-xs-9
+              input.form-control.input-lg(type="password", placeholder="Set Password")
+          .form-group
+            .col-md-2.col-sm-2.col-xs-2
+              i.fa.fa-unlock-alt.fa-2x.pull-right
+            .col-md-9.col-sm-9.col-xs-9
+              input.form-control.input-lg(type="password", placeholder="Confirm Password")
+          .form-group.ac_btn
+            button.logbtn.btn.btn-default(type="submit") Activiate
+
+  // ac_login
+  .container.login
+    .signin
+      p Already have an account?
+      a(href="../../pages/login/index.html")
+        b Sign in
+

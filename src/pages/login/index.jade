@@ -1,0 +1,41 @@
+extends ../../base
+
+block content
+
+  include ../../common/navbar/navbar_index
+
+  include ../../common/banner/banner_index
+
+  // login
+  .container
+    h1.text-center Sign in
+    .row
+      .col-md-6.col-md-offset-3.col-sm-6.col-sm-offset-3
+        form.form-horizontal(role="form")
+          .form-group
+            .col-md-2.col-sm-2.col-xs-2
+              i.fa.fa-envelope.fa-stack-2x
+            .col-lg-9.col-sm-9.col-xs-9
+              input.form-control.input-lg(type="email", placeholder="Email")
+          .form-group
+            .col-md-2.col-sm-2.col-xs-2
+              i.fa.fa-unlock-alt.fa-stack-2x
+            .col-md-9.col-sm-9.col-xs-9
+              input.form-control.input-lg(type="password", placeholder="Password")
+          .form-group.login_btn
+            button.logbtn.btn(type="submit") Go
+            br
+            a(href="#") Forget password?
+    .dog
+      img(src="../../img/dog.png")
+
+  // login_login
+  .container.login
+    .signin
+      p
+        | Julolo is cloud base talents management system.
+        br
+        | Don"t have account yet?
+      a(href="../../pages/activiate/index.html")
+        b Sign up now
+

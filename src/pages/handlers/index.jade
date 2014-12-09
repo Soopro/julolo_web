@@ -1,0 +1,114 @@
+extends ../../base
+
+block content
+
+  include ../../common/navbar/navbar_content
+
+  include ../../common/banner/banner_content
+
+  // handlers
+  .container
+    .row
+      .handlers
+        h2 Supmice Tech co.,Ltd.
+        // nav
+        include ../../common/nav-tabs/nav-tabs
+
+        .handler_panel
+          .col-md-4.col-sm-6.col-xs-12
+            .panel.panel-default
+              .panel-heading
+                | Joe
+                i.fa.fa-pencil.fa-lg.pull-right
+              .panel-body
+                p
+                  span.glyphicon.glyphicon-flag
+                  | Master
+                p
+                  i.fa.fa-bookmark.fa-lg
+                  | Supmice HR
+                p
+                  span.glyphicon.glyphicon-envelope
+                  | joe@supmice.comi
+                p
+                  i.fa.fa-phone.fa-lg
+                  | 13958108444
+          .col-md-4.col-sm-6.col-xs-12
+            .panel.panel-default
+              .panel-heading
+                | Joe
+                i.fa.fa-pencil.fa-lg.pull-right
+              .panel-body
+                p
+                  span.glyphicon.glyphicon-flag
+                  | Master
+                p
+                  i.fa.fa-bookmark.fa-lg
+                  | Supmice HR
+                p
+                  span.glyphicon.glyphicon-envelope
+                  | joe@supmice.comi
+                p
+                  i.fa.fa-phone.fa-lg
+                  | 13958108444
+          .col-md-4.col-sm-6.col-xs-12
+            .panel.panel-default
+              .panel-heading
+                | Joe
+                i.fa.fa-pencil.fa-lg.pull-right
+              .panel-body
+                p
+                  span.glyphicon.glyphicon-flag
+                  | Master
+                p
+                  i.fa.fa-bookmark.fa-lg
+                  | Supmice HR
+                p
+                  span.glyphicon.glyphicon-envelope
+                  | joe@supmice.comi
+                p
+                  i.fa.fa-phone.fa-lg
+                  | 13958108444
+          .col-md-4.col-sm-6.col-xs-12
+            .panel.panel-default
+              .panel-heading
+                | Joe
+                i.fa.fa-pencil.fa-lg.pull-right
+              .panel-body
+                p
+                  span.glyphicon.glyphicon-flag
+                  | Master
+                p
+                  i.fa.fa-bookmark.fa-lg
+                  | Supmice HR
+                p
+                  span.glyphicon.glyphicon-envelope
+                  | joe@supmice.comi
+                p
+                  i.fa.fa-phone.fa-lg
+                  | 13958108444
+          .col-md-4.col-sm-6.col-xs-12
+            a(data-toggle="modal", data-target="#myModal")
+              .panel.specialpanel
+                .invitenew
+                  img(src="../../img/cross.png")
+                  p Invite new managers
+            // Modal
+            #myModal.modal.fade(tabindex="-1", role="dialog", aria-labelledby="myModalLabel", aria-hidden="true")
+              .modal-dialog
+                .modal-content
+                  .modal-header
+                    button.close(type="button", data-dismiss="modal")
+                      span(aria-hidden="true") &#215;
+                      span.sr-only Close
+                    h4#myModalLabel.modal-title Invite new managers
+                  .modal-body
+                    form.form-horizontal(role="form")
+                      .form-group
+                        label.col-sm-2.control-label(for="inputEmail3") Email
+                        .col-sm-10
+                          input#inputEmail3.form-control(type="email", placeholder="Email")
+                  .modal-footer
+                    button.btn.closebtn(type="button", data-dismiss="modal") Cancel
+                    button.btn(type="submit") Send
+  // #handlers

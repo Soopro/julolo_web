@@ -4,6 +4,7 @@ module.exports = (grunt) ->
     'grunt-contrib-copy'
     'grunt-contrib-coffee'
     'grunt-contrib-jade'
+    'grunt-contrib-less'
     'grunt-prettify'
     'grunt-contrib-watch'
     'grunt-browser-sync'

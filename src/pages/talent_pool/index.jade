@@ -1,0 +1,261 @@
+extends ../../base
+
+block content
+
+  include ../../common/navbar/navbar_content
+
+  include ../../common/banner/banner_content
+
+  // talent_pool
+  .container
+    .row
+      .talent_pool
+        h2 Supmice Tech co.,Ltd.
+        //nav
+        include ../../common/nav-tabs/nav-tabs
+
+        // status
+        .status
+          .col-md-2.statu
+            h2
+              | 212
+              small Talents
+          .col-md-2.statu
+            h2
+              | 61
+              small Matched
+          .col-md-2.statu
+            h2
+              | 120
+              small Commented
+          .col-md-2.statu
+            h2
+              | 212
+              small Talents
+          .col-md-2.statu
+            h2
+              | 212
+              small Talents
+          .col-md-2
+            a.btn.addnew.pull-right(href="#") Add New
+        // #status
+        // filter
+        .filter
+          .col-md-2
+            .btn-group
+              button.btn.btn-default.dropdown-toggle(type="button", data-toggle="dropdown")
+                | Job class
+                span.caret
+              ul.dropdown-menu(role="menu")
+                li
+                  a(href="#") Action
+                li
+                  a(href="#") Another action
+                li
+                  a(href="#") Something else here
+                li.divider
+                li
+                  a(href="#") Separated link
+          .col-md-2
+            .btn-group
+              button.btn.btn-default.dropdown-toggle(type="button", data-toggle="dropdown")
+                | Job class
+                span.caret
+              ul.dropdown-menu(role="menu")
+                li
+                  a(href="#") Action
+                li
+                  a(href="#") Another action
+                li
+                  a(href="#") Something else here
+                li.divider
+                li
+                  a(href="#") Separated link
+          .col-md-2
+            .btn-group
+              button.btn.btn-default.dropdown-toggle(type="button", data-toggle="dropdown")
+                | Job class
+                span.caret
+              ul.dropdown-menu(role="menu")
+                li
+                  a(href="#") Action
+                li
+                  a(href="#") Another action
+                li
+                  a(href="#") Something else here
+                li.divider
+                li
+                  a(href="#") Separated link
+          .col-md-2
+            .btn-group
+              button.btn.btn-default.dropdown-toggle(type="button", data-toggle="dropdown")
+                | Job class
+                span.caret
+              ul.dropdown-menu(role="menu")
+                li
+                  a(href="#") Action
+                li
+                  a(href="#") Another action
+                li
+                  a(href="#") Something else here
+                li.divider
+                li
+                  a(href="#") Separated link
+          .col-md-4
+            .input-group.pull-right.search
+              input.form-control(type="text")
+              span.input-group-addon
+                i.fa.fa-search
+        // #filter
+        // table
+        table.table.table-condensed.table-hover
+          thead
+            tr
+              th #
+              th Name
+              th Job position
+              th Email
+              th Tel
+              th
+                p.pull-right Detail
+          tbody
+            tr
+              td 1
+              td Lorem ipsum dolor
+              td Angularjs developer
+              td lorem@dji.com
+              td 13955512345
+              td
+                button.editbtn.pull-right
+                  i.fa.fa-pencil
+                  | edit
+            tr
+              td 2
+              td consectetur
+              td Python Programmer
+              td consectetur@dji.com
+              td 13955512345
+              td
+                button.editbtn.pull-right
+                  i.fa.fa-pencil
+                  | edit
+            tr
+              td 3
+              td eiusmod
+              td Cleaner
+              td eiusmod@dji.com
+              td 13955512345
+              td
+                button.editbtn.pull-right
+                  i.fa.fa-pencil
+                  | edit
+            tr
+              td 4
+              td Lorem ipsum dolor
+              td Angularjs developer
+              td lorem@dji.com
+              td 13955512345
+              td
+                button.editbtn.pull-right
+                  i.fa.fa-pencil
+                  | edit
+            tr
+              td 5
+              td consectetur
+              td Python Programmer
+              td consectetur@dji.com
+              td 13955512345
+              td
+                button.editbtn.pull-right
+                  i.fa.fa-pencil
+                  | edit
+            tr
+              td 6
+              td eiusmod
+              td Cleaner
+              td eiusmod@dji.com
+              td 13955512345
+              td
+                button.editbtn.pull-right
+                  i.fa.fa-pencil
+                  | edit
+            tr
+              td 7
+              td Lorem ipsum dolor
+              td Angularjs developer
+              td lorem@dji.com
+              td 13955512345
+              td
+                button.editbtn.pull-right
+                  i.fa.fa-pencil
+                  | edit
+            tr
+              td 8
+              td consectetur
+              td Python Programmer
+              td consectetur@dji.com
+              td 13955512345
+              td
+                button.editbtn.pull-right
+                  i.fa.fa-pencil
+                  | edit
+            tr
+              td 9
+              td eiusmod
+              td Cleaner
+              td eiusmod@dji.com
+              td 13955512345
+              td
+                button.editbtn.pull-right
+                  i.fa.fa-pencil
+                  | edit
+            tr
+              td 10
+              td Lorem ipsum dolor
+              td Angularjs developer
+              td lorem@dji.com
+              td 13955512345
+              td
+                button.editbtn.pull-right
+                  i.fa.fa-pencil
+                  | edit
+            tr
+              td 11
+              td consectetur
+              td Python Programmer
+              td consectetur@dji.com
+              td 13955512345
+              td
+                button.editbtn.pull-right
+                  i.fa.fa-pencil
+                  | edit
+            tr
+              td 12
+              td eiusmod
+              td Cleaner
+              td eiusmod@dji.com
+              td 13955512345
+              td
+                button.editbtn.pull-right
+                  i.fa.fa-pencil
+                  | edit
+        // #table
+        // pagination
+        nav.text-center
+          ul.pagination
+            li
+              a(href="#") &#171;
+            li
+              a.active(href="#") 1
+            li
+              a(href="#") 2
+            li
+              a(href="#") 3
+            li
+              a(href="#") 4
+            li
+              a(href="#") 5
+            li
+              a(href="#") &#187;
+        // #pagination
+  // #talent_pool

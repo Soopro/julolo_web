@@ -1,6 +1,6 @@
 module.exports = (grunt) ->
 
-  grunt.config.set 'jade',
+  grunt.config.set 'less',
     dev:
       options:
         pretty: true
@@ -8,10 +8,9 @@ module.exports = (grunt) ->
         expand: true
         cwd: './src'
         src: [
-          '**/*.jade'
-          '!base.jade'
-          '!common/**/*.jade'
+          '**/*.less'
+          '!styles/libs/ubuntu-*.less'
         ]
         dest: './build'
-        ext: '.html'
+        ext: '.css'
       ]

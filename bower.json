@@ -22,6 +22,9 @@
     "angular-sanitize": "~1.3.3",
     "angular-bootstrap": "~0.12.0",
     "lodash": "~2.4.1",
-    "thenjs": "~1.4.5"
+    "thenjs": "~1.4.5",
+    "bootstrap": "~3.3.1",
+    "font-awesome": "~4.2.0",
+    "ubuntu-fontface": "~0.1.3"
   }
 }
