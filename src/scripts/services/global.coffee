@@ -1,31 +1,33 @@
 angular.module 'juloloApp'
 
 .service 'g', [
-  '$location'
+  'restUser'
   (
-    $location
+    restUser
   ) ->
-  class User
-    constructor: ->
-      @profile = null
-    init: ->
-      self = @
+    class User
+      constructor: ->
+        @profile = null
+      setProfile: (profile) ->
+        @profile = profile
+      init: ->
+        self = @
 
-  @user = new User
-  @inited = false
-  @init = ->
-    {
-      user
-    } = self = @
-    Thenjs.parallel [
-      (cont) ->
-        user.init()
-        .fin cont
-    ]
-    .then (cout, resultArr) ->
-      self.inited = true
-      cont null, true
-    .fail (cont, error) ->
-      console.error error
-  @
+    @user = new User
+    @inited = false
+    @init = ->
+      {
+        user
+      } = self = @
+      Thenjs.parallel [
+        (cont) ->
+          user.init()
+          .fin cont
+      ]
+      .then (cout, resultArr) ->
+        self.inited = true
+        cont null, true
+      .fail (cont, error) ->
+        console.error error
+    @
 ]

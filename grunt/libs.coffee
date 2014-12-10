@@ -13,6 +13,7 @@ module.exports = do ->
       'angular-resource': 'angular-resource.js'
       'angular-route': 'angular-route.js'
       'angular-sanitize': 'angular-sanitize.js'
+      restangular: 'dist/restangular.js'
       bootstrap: [
         'dist/css/bootstrap.css'
         'dist/js/bootstrap.js'
