@@ -5,6 +5,15 @@ module.exports = do ->
     base: 'bower_components'
     files:
       jquery: 'dist/jquery.js'
+      lodash: 'dist/lodash.js'
+      thenjs: 'then.js'
+      angular: 'angular.js'
+      'angular-bootstrap': 'ui-bootstrap.js'
+      'angular-cookies': 'angular-cookies.js'
+      'angular-resource': 'angular-resource.js'
+      'angular-route': 'angular-route.js'
+      'angular-sanitize': 'angular-sanitize.js'
+      restangular: 'dist/restangular.js'
       bootstrap: [
         'dist/css/bootstrap.css'
         'dist/js/bootstrap.js'
